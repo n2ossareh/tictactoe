@@ -1,0 +1,6 @@
+{
+    "name": "CS50 Codespace",
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
+    "features": {},
+    "forwardPorts": []
+}
