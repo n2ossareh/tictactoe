@@ -3,5 +3,8 @@ __pycache__/
 ./myenv/
 ./myenv/lib/
 ./myenv/lib64/
-./myenv/lib/python3.12/site-packages/
-./myenv/lib64/python3.12/site-packages/
+venv/
+myenv/
+*.pyc
+__pycache__/
+site-packages/
