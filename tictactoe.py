@@ -3,9 +3,7 @@ Tic Tac Toe Player
 """
 
 import math
-# import pygame
 import sys
-# import numpy as np
 import copy
 import os
 
