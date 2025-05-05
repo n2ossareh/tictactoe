@@ -204,41 +204,6 @@ def minimax(board):
     score = Min_Val(board)[0]
     return score
 
-def best_move(main_board):
-    if terminal(main_board) == True:
-      return utility(main_board)
-
-    board = copy.deepcopy(main_board)
-
-    _player = player(board)
-    if _player == X:
-      best_score = float("-inf")
-    elif _player == O:
-      best_score = float("inf")
-    else:
-      best_score = 0
-
-    best_move = None
-    best_move = None
-    available_moves = actions(board)
-    print(f"line 335 - available_moves = {available_moves}")
-    for move in available_moves:
-      board = result(board, move)
-
-      score = minimax(board)
-      _player = player(board)
-      if _player == X:
-        if score > best_score:
-          best_score = score
-          best_move = move
-        else:
-          if score < best_score:
-            best_score = score
-            best_move = move
-
-    if best_move != None:
-      main_board[best_move[0]][best_move[1]] = _player
-
 def Max_Val(board):
     if terminal(board) == True:
         return None, utility(board)
